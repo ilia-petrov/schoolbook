@@ -94,23 +94,3 @@ struct Student
         subjects.erase(sub);
     }
 };
-
-static bool by_number(Student* a, Student* b)
-{
-    return a->number < b->number;
-}
-
-static bool by_f_name(Student* a, Student* b)
-{
-    return a->names[0] < b->names[0];
-}
-
-static bool by_s_name(Student* a, Student* b)
-{
-    return a->names[1] < b->names[1];
-}
-
-static bool by_l_name(Student* a, Student* b)
-{
-    return a->names[2] < b->names[2];
-}

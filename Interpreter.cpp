@@ -1,4 +1,4 @@
-#include "schoolbook.cpp"
+#include "Schoolbook.cpp"
 
 static void fail()
 {
@@ -47,7 +47,7 @@ static void Interpreter(Schoolbook* book)
 				int num, note;
 				std::string sub;
 				std::cin >> num >> sub >> note;
-				
+
 				int stud = book->find_number(num, 0);
 				if (stud == book->students.size())
 				{
@@ -192,7 +192,7 @@ static void Interpreter(Schoolbook* book)
 			{
 				std::string which, name;
 				std::cin >> which >> name;
-				
+
 				if (which == "first")
 				{
 					book->find_name(name, 0, true);
