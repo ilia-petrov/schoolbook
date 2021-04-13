@@ -12,9 +12,7 @@ struct Schoolbook
         newstudent->names[0] = f_name;
         newstudent->names[1] = s_name;
         newstudent->names[2] = l_name;
-        newstudent->number = size;
-        
-        ++ size;
+        newstudent->number = ++ size;
 
         students.push_back(newstudent);
     }
