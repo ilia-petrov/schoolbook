@@ -2,14 +2,14 @@
 
 static void fail()
 {
-	if (std::cin.fail())
-	{
-		std::cin.clear();
-	}
-
 	std::string str;
 	while (true)
 	{
+		if (std::cin.fail())
+		{
+			std::cin.clear();
+		}
+
 		std::cin >> str;
 		if (str == "clear")
 		{
