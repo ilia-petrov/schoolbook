@@ -2,6 +2,8 @@
 
 struct Schoolbook
 {
+    private int size = 0;
+    
     std::vector<Student*> students;
 
     void push(std::string f_name, std::string s_name, std::string l_name)
@@ -10,7 +12,9 @@ struct Schoolbook
         newstudent->names[0] = f_name;
         newstudent->names[1] = s_name;
         newstudent->names[2] = l_name;
-        newstudent->number = students.size() + 1;
+        newstudent->number = size;
+        
+        ++ size;
 
         students.push_back(newstudent);
     }
